@@ -99,7 +99,7 @@ function UploadForm() {
       uploadFormData.append("media", image);
 
       const response = await fetch(
-        "http://localhost:5000/api/media/upload",
+        "https://resume-final-gamma.vercel.app/api/media/upload",
         {
           method: "POST",
           body: uploadFormData,
@@ -121,7 +121,7 @@ function UploadForm() {
 
       const imageUrl = uploadedImagePath.startsWith("http")
         ? uploadedImagePath
-        : `http://localhost:5000/${uploadedImagePath.replace(/^\/+/, "")}`;
+        : `https://resume-final-gamma.vercel.app/${uploadedImagePath.replace(/^\/+/, "")}`;
 
       const resumeData = {
         ...formData,
