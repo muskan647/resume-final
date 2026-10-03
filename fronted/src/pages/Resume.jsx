@@ -131,19 +131,8 @@ function Resume() {
               {resumeData.tools || "[Add tools]"}
             </p>
 
-            <p>
-              <span className="font-bold text-slate-950">
-                CMS / Other Skills:
-              </span>{" "}
-              {resumeData.cms || "[Add CMS skills]"}
-            </p>
-
-            <p>
-              <span className="font-bold text-slate-950">
-                Operating Systems:
-              </span>{" "}
-              {resumeData.operatingSystems || "[Add operating systems]"}
-            </p>
+            
+            
           </div>
         </section>
 
